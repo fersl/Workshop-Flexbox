@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100%;
+    background-color: #1D5B79;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --blue: #1D5B79;
+    --orange: #F3AA60;
+    --white: #fff;
+}
+
+/*------------------- BARRA SUPERIOR -------------*/
+
+nav{
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 10px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    font-weight: lighter;
+}
+
+.navbar-links {
+    list-style: none;
+
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-links a {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 26px;
+}
+
+/* ---------------------------------- */
+
+/* .hero {
+    height: 544px;
+}
+
+.hero img {
+    height: 544px;
+} */
+
+/*-------------- CORPO DA PÁGINA -------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section>h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--white);
+    font-size: 48px;
+    font-weight: lighter;
+    margin: 30px 0px;
+    border-bottom: 5px solid var(--white);
+    text-align: center;
+    width: 40%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; 
+}
+/*--------------- SEÇÃO PRODUTOS -------------- */
+
+.produto-card {
+    background-color: var(--white);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.produto-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.card-text h1 {
+    /* font-family: 'Bebas Neue', sans-serif; */
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.card-text p {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-text span{
+    color: red;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.card-text button {
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+
+/*------------------- SEÇÃO REVIEWS --------------*/
+.reviews {
+    gap: 50px;
+}
+
+.review-card {
+    background-color: var(--white);
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.review-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.review-card h1 {
+    font-size: 26px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: lighter;
+}
+
+.review-card p {
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*------------------- SEÇÃO REVIEWS --------------*/
+.contato form{
+    background-color: var(--orange);
+    width: 80%;
+    padding: 30px 50px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 5px;
+    /* width: 80%; */
+}
+
+.input-container label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.input-container input{
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.input-container textarea{
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+.input-container input:focus{
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.input-container textarea:focus{
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/*------------------- SEÇÃO REVIEWS --------------*/
+footer {
+    margin: 40px 0px;
+
+    display: flex;
+    justify-content: space-around;
+    color: var(--white);
+}
+
+footer h1{
+    font-size: 24px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+footer img {
+    margin: 0px 5px;
+}

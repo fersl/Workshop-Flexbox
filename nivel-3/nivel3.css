@@ -1,0 +1,55 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+p{
+    font-size: 50px;
+    border-bottom: 1px solid black;
+}
+
+.form-container {
+    background-color: #d8d8d8;
+    width: 50%;
+    /* height: 60%; */
+    border-radius: 10px;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.input-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-container label {
+    font-size: 20px;
+}
+
+.form-container input {
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+
+    /* https://getcssscan.com/css-box-shadow-examples */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
